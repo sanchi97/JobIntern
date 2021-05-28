@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobInTern</title>
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .course .box-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-transform: none;
+        }
+
+        .course .box-container .box {
+            width: 21rem;
+            border: .1rem solid rgba(0, 0, 0, .3);
+            position: relative;
+            margin: 1.2rem;
+        }
+
+        /* .course .box-container .box img{
+    height:20rem;
+    width: 100%;
+    object-fit: cover;
+} */
+
+        .course .box-container .box .content {
+            padding: 1rem;
+        }
+
+        .course .box-container .box .content .stars i {
+            color: #1f2022;
+            font-size: 1.7rem;
+            padding: 1rem .1rem;
+        }
+
+        .course .box-container .box .content .title {
+            color: #444;
+            font-size: 2.1rem;
+        }
+
+        .course .box-container .box .content .title:hover {
+            text-decoration: underline;
+        }
+
+        .course .box-container .box .content p {
+            padding: 1rem 0;
+            color: rgb(14, 13, 13);
+            font-size: 1.5rem;
+        }
+
+        .course .box-container .box .content .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: .5rem;
+            border-top: .1rem solid rgba(0, 0, 0, .3);
+        }
+
+        .course .box-container .box .content .info h3 {
+            font-size: 1.5rem;
+            padding: 1rem;
+            color: #666;
+        }
+
+        .course .box-container .box .content .info h3 i {
+            color: #12c9e9;
+        }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        /* background:rgba(14, 13, 13, 0.7)url(l.jpg) no-repeat; */
+        
+        background-blend-mode: overlay;
+
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        text-align: center;
+        
+    
+    background:rgba(14, 13, 13, 0.7) url(l.jpg) ;
+    background-blend-mode:overlay;
+    
+    background-position: center;
+    
+    padding-top: 150px;
+    padding-left: 50px;
+    text-align: justify;
+
+   width: 100%;
+  display: flex;
+
+}
+ .anicontainer{
+     
+     font-size: 20px;
+     margin-bottom: 1%;
+     letter-spacing: 5px;
+     overflow: hidden;
+     animation:content 2s ease-in-out;
+     /* background-image: url(laptop.jpeg); */
+     
+
+}
+@keyframes anicontainer{
+   0%{
+       opacity: 0;
+       transform: translateY(-50%);
+   }
+
+}
+.anicontainer h2{
+   font-size: 15px;
+   margin-bottom: 3%;
+   font-family:Arial;
+   color: black;
+}
+.anicontainer p{
+   font-size:15px;
+   font-weight: 50px;
+   margin-bottom: 3%;
+   font-family: sans-serif;
+   
+}
+
+@media screen and (max-width:1000px) {
+   .anicontainer{
+       width: -100%;
+       text-align: center;
+   }
+   .anicontainer h1{
+       margin-bottom: 5%;
+   }
+   .anicontainer h2{
+       margin-bottom: 5%;
+   }
+   .anicontainer p{
+      margin-bottom: 5%;
+  }
+  
+
+}
+
+        /* .course .box-container .box .price{
+    position: absolute;
+    top:16rem; right:1rem;
+    height:8rem;
+    width:8rem;
+    line-height: 8rem;
+    text-align: center;
+    border-radius: 50%;
+    background:var(--gradient);
+    color:#fff;
+    font-size: 3rem;
+} */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="p-3 mb-2 bg-dark text-white">
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="#" class="logo" style="text-decoration: none;"><i class="fas fa-user-graduate"></i><span
+                class="text-dark">Job</span><span class="text-danger">In</span><span class="text-warning">Tern</span>
+            </div></a>
+
+        <nav class="navbar">
+            <ul style="text-decoration: none;">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#company">Company</a></li>
+                <li><a href="#job">Job</a></li>
+                <li><a href="#teacher">Catagories</a></li>
+                <li><a href="#training">Trainings</a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <div id="login" class="fas fa-user-circle"></div>
+
+    </header>
+    <!-- main -->
+	<div class="main">
+		<div class="anicontainer">
+			<h1 class="text-light" style="font-size: 45px;">Put Your Career into the  &#10004; Track</h1>
+            <p><h3 class="text-white">All growth depends upon activity. There is no development physically or intellectually without effort, and effort means work.</h3></p>
+            <p><h2 class="btn btn-outline-warning text-center"><a href="#course" style="text-decoration: none;">Work From Home</a></h2></p>
+			
+			
+					
+		</div>
+	</div>
+	<br>
+
+
+
+	<!-- main end -->
+    <section>
+        <!-- course section starts  -->
+
+        <section class="course" id="course">
+
+            <h1 class="heading"><p>Grab the chance to get placed</p></h1>
+
+            <div class="box-container">
+
+                <div class="box">
+
+                    <div class="content">
+
+                        <p class="text-center"><a href="#" class="title">Cognizent</a><br>Python Developer</p>
+
+                        <div class="stars">
+                            <i class="fas fa-briefcase"><span> 0-1yr</span></i>
+                            <br>
+                            <i class="fas fa-rupee-sign"><span>4.50-5.50lpa</span></i>
+                            <br>
+                            <i class="fas fa-map-marker-alt">Hydrabad</i>
+                            <br>
+                            <p><b>Skills</b>
+                                <i class="fa-angle-double-right"></i><small>Python</small>, <small>JAVA</small>,
+                                <small>DSA</small>
+                                <p class="text-center"><button class="btn btn-primary btn-sm text center">Apply</button></p>
+                        </div>
+
+                        </p>
+                        <div class="info">
+                            <h3> <i class="far fa-clock"></i> Part-Time </h3>
+                            <h3> <i class="far fa-calendar-alt"></i> Full-Time </h3>
+                            <h3> <i class="fas fa-user-graduate"></i> Internship </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+
+                    <div class="content">
+
+                        <p class="text-center"><a href="#" class="title">HCL</a><br>Java Developer</p>
+
+                        <div class="stars">
+                            <i class="fas fa-briefcase"><span> 7-8yr</span></i>
+                            <br>
+                            <i class="fas fa-rupee-sign"><span>6.50-8.50lpa</span></i>
+                            <br>
+                            <i class="fas fa-map-marker-alt">Pune</i>
+                            <br>
+                            <p><b>Skills</b>
+                                <i class="fa-angle-double-right"></i><small>DSA</small>, <small>Core-JAVA</small>,
+                                <small>AWS</small>
+                                <p class="text-center"><button class="btn btn-primary btn-sm text center">Apply</button></p>
+                        </div>
+
+                        </p>
+                        <div class="info">
+                            <h3> <i class="far fa-clock"></i> Part-Time </h3>
+                            <h3> <i class="far fa-calendar-alt"></i> Full-Time </h3>
+                            <h3> <i class="fas fa-user-graduate"></i> Internship </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+
+                    <div class="content">
+
+                        <p class="text-center"><a href="#" class="title">MPhasis</a><br>Python Developer</p>
+
+                        <div class="stars">
+                            <i class="fas fa-briefcase"><span> 2-3yr</span></i>
+                            <br>
+                            <i class="fas fa-rupee-sign"><span>4.50-5.50lpa</span></i>
+                            <br>
+                            <i class="fas fa-map-marker-alt">Bangalore</i>
+                            <br>
+                            <p><b>Skills</b>
+                                <i class="fa-angle-double-right"></i><small>Python</small>, <small>JAVA</small>,
+                                <small>DSA</small>
+                                <p class="text-center"><button class="btn btn-primary btn-sm text center">Apply</button></p>
+                        </div>
+
+                        </p>
+                        <div class="info">
+                            <h3> <i class="far fa-clock"></i> Part-Time </h3>
+                            <h3> <i class="far fa-calendar-alt"></i> Full-Time </h3>
+                            <h3> <i class="fas fa-user-graduate"></i> Internship </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+
+                    <div class="content">
+
+                        <p class="text-center"><a href="#" class="title">Wipro</a><br>Python Developer</p>
+
+                        <div class="stars">
+                            <i class="fas fa-briefcase"><span> 0-1yr</span></i>
+                            <br>
+                            <i class="fas fa-rupee-sign"><span>4.50-5.50lpa</span></i>
+                            <br>
+                            <i class="fas fa-map-marker-alt">Hydrabad</i>
+                            <br>
+                            <p><b>Skills</b>
+                                <i class="fa-angle-double-right"></i><small>Python</small>, <small>JAVA</small>,
+                                <small>DSA</small>
+                                <p class="text-center"><button class="btn btn-primary btn-sm text center">Apply</button></p>
+                        </div>
+
+                        </p>
+                        <div class="info">
+                            <h3> <i class="far fa-clock"></i> Part-Time </h3>
+                            <h3> <i class="far fa-calendar-alt"></i> Full-Time </h3>
+                            <h3> <i class="fas fa-user-graduate"></i> Internship </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+
+                    <div class="content">
+
+                        <p class="text-center"><a href="#" class="title">Infosys</a><br>Python Developer</p>
+
+                        <div class="stars">
+                            <i class="fas fa-briefcase"><span> 2-3yr</span></i>
+                            <br>
+                            <i class="fas fa-rupee-sign"><span>4.50-5.50lpa</span></i>
+                            <br>
+                            <i class="fas fa-map-marker-alt">Mysore</i>
+                            <br>
+                            <p><b>Skills</b>
+                                <i class="fa-angle-double-right"></i><small>Python</small>, <small>JAVA</small>,
+                                <small>DSA</small>
+                                <p class="text-center"><button class="btn btn-primary btn-sm text center">Apply</button></p>
+                        </div>
+
+                        </p>
+                        <div class="info">
+                            <h3> <i class="far fa-clock"></i> Part-Time </h3>
+                            <h3> <i class="far fa-calendar-alt"></i> Full-Time </h3>
+                            <h3> <i class="fas fa-user-graduate"></i> Internship </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+
+                    <div class="content">
+
+                        <p class="text-center"><a href="#" class="title">TCL</a><br>System Support</p>
+
+                        <div class="stars">
+                            <i class="fas fa-briefcase"><span> 0-1yr</span></i>
+                            <br>
+                            <i class="fas fa-rupee-sign"><span>4.50-5.50lpa</span></i>
+                            <br>
+                            <i class="fas fa-map-marker-alt">Hydrabad</i>
+                            <br>
+                            <p><b>Skills</b>
+                                <i class="fa-angle-double-right"></i><small>Python</small>, <small>JAVA</small>,
+                                <small>DSA</small>
+                                <p class="text-center"><button class="btn btn-primary btn-sm text center">Apply</button></p>
+                        </div>
+
+                        </p>
+                        <div class="info">
+                            <h3> <i class="far fa-clock"></i> Part-Time </h3>
+                            <h3> <i class="far fa-calendar-alt"></i> Full-Time </h3>
+                            <h3> <i class="fas fa-user-graduate"></i> Internship </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+
+                    <div class="content">
+
+                        <p class="text-center"><a href="#" class="title">Amazon</a><br>Android Developer</p>
+
+                        <div class="stars">
+                            <i class="fas fa-briefcase"><span> 0-1yr</span></i>
+                            <br>
+                            <i class="fas fa-rupee-sign"><span>4.50-5.50lpa</span></i>
+                            <br>
+                            <i class="fas fa-map-marker-alt">Hydrabad</i>
+                            <br>
+                            <p><b>Skills</b>
+                                <i class="fa-angle-double-right"></i><small>Python</small>, <small>JAVA</small>,
+                                <small>DSA</small>
+                                <p class="text-center"><button class="btn btn-primary btn-sm text center">Apply</button></p>
+                        </div>
+
+                        </p>
+                        <div class="info">
+                            <h3> <i class="far fa-clock"></i> Part-Time </h3>
+                            <h3> <i class="far fa-calendar-alt"></i> Full-Time </h3>
+                            <h3> <i class="fas fa-user-graduate"></i> Internship </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+
+                    <div class="content">
+
+                        <p class="text-center"><a href="#" class="title">indeed</a><br>Python Developer</p>
+
+                        <div class="stars">
+                            <i class="fas fa-briefcase"><span> 0-1yr</span></i>
+                            <br>
+                            <i class="fas fa-rupee-sign"><span>4.50-5.50lpa</span></i>
+                            <br>
+                            <i class="fas fa-map-marker-alt">Hydrabad</i>
+                            <br>
+                            <p><b>Skills</b>
+                                <i class="fa-angle-double-right"></i><small>Python</small>, <small>JAVA</small>,
+                                <small>DSA</small>
+                                <p class="text-center"><button class="btn btn-primary btn-sm text center">Apply</button></p>
+                        </div>
+
+                        </p>
+                        <div class="info">
+                            <h3> <i class="far fa-clock"></i> Part-Time </h3>
+                            <h3> <i class="far fa-calendar-alt"></i> Full-Time </h3>
+                            <h3> <i class="fas fa-user-graduate"></i> Internship </h3>
+                        </div>
+                    </div>
+                </div>
+                
+            </section >
+        
+
+                
+
+
+
+
+ <!-- <footer class="bg-dark text-white pt-5 pb-4 ">
+                    <div class="footer text-center text-md-left">
+                        <div class="row text-center text-md-left">
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h4 class="text lowercase-mb-4" style="font-size: 40px;"><span
+                                        class="text-info">Job</span><span class="text-danger">In</span><span
+                                        class="text-warning">Tern</span></h4>
+                                <p style="font-size: medium;">Here we offer a person many chances to boost there
+                                    learning skills
+                                </p>
+
+                                <div class="footer-col text-center">
+
+                                    <div class="social-links mb-4 ">
+
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text- mb-4 " style="font-size:20px">Internship by Stream</h5>
+                                <p><a href="#" class="text-white" style="text-decoration: none ; "></a>
+                                <h4>Computer Sceince Internship</h4>
+                                </p>
+                                <p><a href="#" class="text-white" style="text-decoration: none;"></a>
+                                <h4>Electronics Internship</h4>
+                                </p>
+                                <p><a href="#" class="text-white" style="text-decoration: none;"></a>
+                                <h4>Finance Internship</h4>
+                                </p>
+                                <p><a href="#" class="text-white" style="text-decoration: none;"></a>
+                                <h4>Marketing & Sales Internship</h4>
+                                </p>
+                                <p><a href="#" class="text-white" style="text-decoration: none;"></a>
+                                <h4>Campus Ambassador Internship</h4>
+                                </p>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text- mb-4" style="font-size:20px">Internship By Place</h5>
+                                <p><a href="#" class="text-white" style="text-decoration: none;"></a>
+                                <h4>Kolkata</h4>
+                                </p>
+                                <p><a href="#" class="text-white" style="text-decoration: none;"></a>
+                                <h4>Bangalore</h4>
+                                </p>
+                                <p><a href="#" class="text-white" style="text-decoration: none;"></a>
+                                <h4>Hydrebad</h4>
+                                </p>
+                                <p><a href="#" class="text-white" style="text-decoration: none;"></a>
+                                <h4>Pune</h4>
+                                </p>
+                                <p><a href="#" class="text-white" style="text-decoration: none;"></a>
+                                <h4>Noida<h4>
+                                        </p>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                                <h5 class="text- mb-4" style="font-size:20px">Contact Us</h5>
+                                <p><i class="fas fa-home mr-3" style="font-size:20px"> Street-6,Noida,India</i></p>
+                                <p><i class="fas fa-envelope mr-3" style="font-size:20px"> jobintern@yahoo.com</i></p>
+                                <p><i class="fas fa-phone mr-3" style="font-size:20px"> +91-6274854579</i></p>
+                            </div>
+        </section>
+
+        </div>
+
+        </div>
+        <hr class="mb-4">
+        <div class="row align-item-center">
+            <div class="col-md-7 col-lg-8 text-center">
+                <p style="font-size: 20px;">Copyright &#169;
+                    2021 All rights reserved
+                    <br>Designed By S.Brambha
+                </p>
+
+            </div>
+
+        </div>
+
+
+        </div>
+
+        </footer> -->
+
+
+        <!-- footer section ends -->
+
+        <script src="script.js"></script>
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
