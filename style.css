@@ -275,13 +275,14 @@ header #menu{
     background-image: transparent;
     background-size: cover;
     background-position: bottom;
+    line-height: 0;
 }
 
 .teacher p{
     font-size: 1.8rem;
     color:#666;
     width:65rem;
-    margin:1rem auto;
+    margin:10px auto;
 }
 #card{
     background-color: transparent;
